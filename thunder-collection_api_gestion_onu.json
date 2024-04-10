@@ -1,0 +1,272 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "api_gestion_onu",
+    "dateExported": "2024-04-10T12:03:27.186Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "1855d725-b809-45fe-92cb-6c6381065017",
+            "name": "POST",
+            "containerId": "2455c65f-a874-4c87-84cc-d39fa1a48857",
+            "created": "2024-04-09T06:27:21.059Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "2455c65f-a874-4c87-84cc-d39fa1a48857",
+            "name": "persona",
+            "containerId": "",
+            "created": "2024-04-09T06:44:03.836Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "9f90d634-59aa-43c6-8c57-2d89e337b48a",
+            "name": "GET",
+            "containerId": "2455c65f-a874-4c87-84cc-d39fa1a48857",
+            "created": "2024-04-09T17:14:42.281Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "385c7d68-8678-4b5d-8b7b-48331b10cc6c",
+            "name": "PUT",
+            "containerId": "2455c65f-a874-4c87-84cc-d39fa1a48857",
+            "created": "2024-04-09T19:06:34.238Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "1d2b1ae1-1c5f-480a-81e6-5cba559517c7",
+            "name": "director",
+            "containerId": "",
+            "created": "2024-04-09T21:33:26.792Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "85e33a0b-8e21-4ff7-a416-c65a50ef1afa",
+            "name": "POST",
+            "containerId": "1d2b1ae1-1c5f-480a-81e6-5cba559517c7",
+            "created": "2024-04-09T21:33:33.977Z",
+            "sortNum": 70000
+        },
+        {
+            "_id": "33061a3c-c9e9-4c56-a73c-f6c24bc03afd",
+            "name": "GET",
+            "containerId": "1d2b1ae1-1c5f-480a-81e6-5cba559517c7",
+            "created": "2024-04-09T21:33:38.799Z",
+            "sortNum": 80000
+        },
+        {
+            "_id": "51048ba3-6c4f-4896-9cf4-ced76d646826",
+            "name": "PUT",
+            "containerId": "1d2b1ae1-1c5f-480a-81e6-5cba559517c7",
+            "created": "2024-04-09T21:33:47.276Z",
+            "sortNum": 90000
+        },
+        {
+            "_id": "b2ec965a-2f8d-4e6b-b67c-fc4847bb13e0",
+            "name": "DEL",
+            "containerId": "1d2b1ae1-1c5f-480a-81e6-5cba559517c7",
+            "created": "2024-04-09T21:33:52.412Z",
+            "sortNum": 100000
+        },
+        {
+            "_id": "014104f6-4e48-4ec7-92ad-b42b2e686810",
+            "name": "ciudad",
+            "containerId": "",
+            "created": "2024-04-10T08:52:22.784Z",
+            "sortNum": 110000
+        },
+        {
+            "_id": "0b7a7fcf-3666-4255-b171-07229ec5d1a9",
+            "name": "POST",
+            "containerId": "014104f6-4e48-4ec7-92ad-b42b2e686810",
+            "created": "2024-04-10T08:52:33.984Z",
+            "sortNum": 120000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "f1780afd-396f-4aae-b1e7-3f90192c13be",
+            "colId": "0eb1bb26-adb6-44d2-b274-3ba6e44f4a91",
+            "containerId": "1855d725-b809-45fe-92cb-6c6381065017",
+            "name": "registrar_personas",
+            "url": "localhost:8080/persona/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-09T06:28:55.223Z",
+            "modified": "2024-04-09T06:41:55.003Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"primer_nombre\": \"Luz\",\r\n  \"segundo_nombre\": \"Helena\",\r\n  \"primer_apellido\": \"Bueno\",\r\n  \"segundo_apellido\": \"Bayona\",\r\n  \"numero_identificacion\": \"1234567891\",\r\n  \"telefono\": \"1234567891\",\r\n  \"rol\": \"director\",\r\n  \"email\": \"luzh@gmail.com\",\r\n  \"password\": \"luzh12345\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "35ae245f-f002-4062-80ee-cf8612337f79",
+            "colId": "0eb1bb26-adb6-44d2-b274-3ba6e44f4a91",
+            "containerId": "1855d725-b809-45fe-92cb-6c6381065017",
+            "name": "ingresar_persona",
+            "url": "localhost:8080/persona/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-09T06:43:50.383Z",
+            "modified": "2024-04-09T19:07:34.651Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"perezbuenojuliandavid@gmail.com\",\n  \"password\":\"JDPerez1005\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3936f1bb-cae6-424e-98f5-843c1fa0e0ba",
+            "colId": "0eb1bb26-adb6-44d2-b274-3ba6e44f4a91",
+            "containerId": "9f90d634-59aa-43c6-8c57-2d89e337b48a",
+            "name": "enlistar_personas",
+            "url": "localhost:8080/persona/listar_personas",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-09T17:14:57.803Z",
+            "modified": "2024-04-09T17:38:04.396Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsdXpoQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzEyNjg3ODc1LCJpYXQiOjE3MTI2ODQyNzV9.VsIXlK1uWMAzn6xvkMqvWF9Fwu5fIUKvC7wI-jbl9Vg"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9cc6981b-f0fe-4630-9c54-d774f73ff2a7",
+            "colId": "0eb1bb26-adb6-44d2-b274-3ba6e44f4a91",
+            "containerId": "385c7d68-8678-4b5d-8b7b-48331b10cc6c",
+            "name": "actualizar_estado_persona",
+            "url": "localhost:8080/persona/cambiar_estado/2",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-04-09T19:06:49.816Z",
+            "modified": "2024-04-09T19:08:58.448Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"status\":\"true\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXJlemJ1ZW5vanVsaWFuZGF2aWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzEyNjkzMjU0LCJpYXQiOjE3MTI2ODk2NTR9.hkwfHQ1tau8va-GaqRPOeMgU_8TcTNITlO_NXdLKaJ8"
+            },
+            "tests": []
+        },
+        {
+            "_id": "831f3a61-5a2f-4720-8276-14788720a987",
+            "colId": "0eb1bb26-adb6-44d2-b274-3ba6e44f4a91",
+            "containerId": "85e33a0b-8e21-4ff7-a416-c65a50ef1afa",
+            "name": "registrar_director",
+            "url": "localhost:8080/director?personaId=2",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-04-09T21:36:36.987Z",
+            "modified": "2024-04-09T22:36:56.572Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "personaId",
+                    "value": "2",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXJlemJ1ZW5vanVsaWFuZGF2aWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzEyNzA1ODA1LCJpYXQiOjE3MTI3MDIyMDV9.q7NlpYJv7C4XQOfvrHxewAYUA637VVyXLkVotuF2m-k"
+            },
+            "tests": []
+        },
+        {
+            "_id": "5d734fd3-de19-468d-b218-cb5a2687c4ad",
+            "colId": "0eb1bb26-adb6-44d2-b274-3ba6e44f4a91",
+            "containerId": "b2ec965a-2f8d-4e6b-b67c-fc4847bb13e0",
+            "name": "eliminar_director",
+            "url": "localhost:8080/director/1",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-04-09T21:47:55.508Z",
+            "modified": "2024-04-09T21:49:04.625Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXJlemJ1ZW5vanVsaWFuZGF2aWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzEyNzAyOTE0LCJpYXQiOjE3MTI2OTkzMTR9._0hlMt9gwEg0IIS6Q1X7MZBVtLEKm1mwerSrdjkeNrw"
+            },
+            "tests": []
+        },
+        {
+            "_id": "5aa0238b-b44a-4f8e-987c-5691a7ad315d",
+            "colId": "0eb1bb26-adb6-44d2-b274-3ba6e44f4a91",
+            "containerId": "33061a3c-c9e9-4c56-a73c-f6c24bc03afd",
+            "name": "buscar_director_por_id",
+            "url": "localhost:8080/director/2",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-04-09T22:49:27.371Z",
+            "modified": "2024-04-09T22:50:19.190Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXJlemJ1ZW5vanVsaWFuZGF2aWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzEyNzA2NjA3LCJpYXQiOjE3MTI3MDMwMDd9.ZOOzAEGU542VFFLv140WdVpUT5tTliU7FIbuhsnyu5I"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a23600b3-8c58-4930-aa3a-d69a730c8297",
+            "colId": "0eb1bb26-adb6-44d2-b274-3ba6e44f4a91",
+            "containerId": "33061a3c-c9e9-4c56-a73c-f6c24bc03afd",
+            "name": "listar_directores",
+            "url": "localhost:8080/director",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-04-09T22:50:42.151Z",
+            "modified": "2024-04-09T22:50:55.492Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXJlemJ1ZW5vanVsaWFuZGF2aWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzEyNzA2NjA3LCJpYXQiOjE3MTI3MDMwMDd9.ZOOzAEGU542VFFLv140WdVpUT5tTliU7FIbuhsnyu5I"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f0c19004-0f77-4472-ac35-a730cff571ab",
+            "colId": "0eb1bb26-adb6-44d2-b274-3ba6e44f4a91",
+            "containerId": "0b7a7fcf-3666-4255-b171-07229ec5d1a9",
+            "name": "registrar_ciudades",
+            "url": "localhost:8080/ciudad",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-04-10T08:52:48.572Z",
+            "modified": "2024-04-10T08:53:50.184Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"bucaramanga\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXJlemJ1ZW5vanVsaWFuZGF2aWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzEyNzQyNzIxLCJpYXQiOjE3MTI3MzkxMjF9.Q8kT9hT6riZ15AB44z8xD8A2Pl44y3ry-h8T9aWJhs0"
+            },
+            "tests": []
+        }
+    ]
+}
